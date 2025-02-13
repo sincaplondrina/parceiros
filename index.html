@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parceiros Sincap</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+
+        #myCarousel .carousel-inner {
+            height: 350px; /* Ajuste conforme necessário */
+        }
+
+        #myCarousel .carousel-item {
+            height: 100%;
+        }
+
+        #myCarousel .carousel-item svg {
+            height: 100%;
+            width: 100%;
+        }
+        .text-bg-dark, .bg-dark, .btn-primary, .btn-outline-secondary {
+            color: #fff !important;
+            background-color: #003665 !important;
+        }
+        .link-primary, .text-dark {
+            color: #003665 !important;
+            /* background-color: #003665 !important; */
+        }
+        h1,h2,h3,h4,h5,h6 {
+            color: #906D07 !important;
+        }
+        /* 
+            Cores:
+            Azul Sincap: #003665
+            Amarelo outro Sincap: #906D07
+            Azul Senac: #00528F
+            Laranja Senac: #EF871E
+         */
+    </style>
+</head>
+
+<body>
+    <header data-bs-theme="dark">
+        <div class="collapse text-bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-5 py-2">
+                        <h4>Sobre</h4>
+                        <p class="text-body-secondary">2025 &#64; Desenvolvido por: Rodrigo Salinet - Instrutor de Informática do Senac Londrina Centro. &copy; Todos os direitos reservados ao autor.</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4>Contato Rodrigo</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-facebook fa-fw"></i> <a href="https://www.facebook.com/rodrigo.salinet/" class="text-white" target="_blank">Siga o Rodrigo no Facebook</a></li>
+                            <li><i class="fa fa-instagram fa-fw"></i> <a href="https://www.instagram.com/rodrigosalinet/" class="text-white" target="_blank">Siga o Rodrigo no Instagram</a></li>
+                            <li><i class="fa fa-github fa-fw"></i> <a href="https://github.com/rodrigo-salinet?tab=repositories" class="text-white" target="_blank">Portifólio Github</a></li>
+                            <li><i class="fa fa-envelope fa-fw"></i> <a href="mailto:rodrigo.salinet@gmail.com" class="text-white" target="_blank">Email: rodrigo.salinet@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <strong>Parceiros Sincap</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url('./img/Senac_logo-pequena.png'), linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)); background-position: center; background-repeat: no-repeat;">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Cursos Senac PR</h1>
+                            <p class="opacity-75"><b>Oportunidade de aprendizado para você se destacar no mercado!</b><br/> <i>Juntos, somos mais fortes!</i><br/> Amplie oportunidades, reduza riscos e impulsione a inovação em sua carreira para um crescimento sustentável.
+                            </p>
+                            <p><a class="btn btn-lg btn-primary" href="https://www.pr.senac.br/busca" target="_blank">Acesse Senac PR</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('./img/sesc-logo-F184943794-seeklogo.com.png'), linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)); background-position: center; background-repeat: no-repeat;">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Cursos Sesc PR</h1>
+                            <p><b>Aumente seu conhecimento e cresça profissionalmente!</b><br/> <i>Conectando forças, alcançamos mais!</i><br/> A colaboração estratégica entre empresas gera soluções mais eficientes e fortalece a competitividade no mercado.</p>
+                            <!-- 
+                            
+                            https://www.sescpr.com.br/parana/cursos/
+                            -->
+                            <p><a class="btn btn-lg btn-primary" href="https://www.sescpr.com.br/parana/cursos/#{%22post_type%22:%22curso%22,%22s%22:%22%22,%22cidade%22:%22%22,%22valor-range%22:%220;16500.00%22,%22unidade%22:%22%22,%22paged%22:%221%22}" target="_blank">Acesse Sesc PR</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('./img/Sebrae-logo-pequena.png'), linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)); background-position: center; background-repeat: no-repeat;">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Cursos Sebrae</h1>
+                            <p><b>Invista no seu futuro!</b><br/> <i>União que gera resultados!</i><br/> Parcerias bem-sucedidas criam sinergias, otimizam recursos e promovem um impacto positivo para todos os envolvidos.</p>
+                            <p><a class="btn btn-lg btn-primary" href="https://sebrae.com.br/sites/PortalSebrae/cursosonline" target="_blank">Acesse Sebrae</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+        <section class="py-2 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Bem vindo(a) à página de Parceiros Sincap</h1>
+                    <p class="lead text-body-secondary">Aprender com quem está no mercado há mais de 70 anos te coloca um passo à frente da concorrência!
+                    </p>
+                    <p>
+                        <a href="#containeres" class="btn btn-primary my-2">Continuar</a>
+                        <!-- <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="album py-2 bg-body-tertiary" id="containeres">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./img/Senac_logo-pequena.png" class="img-fluid rounded" />
+                            <div class="card-body bg-body-secondary">
+                                <p class="card-text">Vários sonhos, o mesmo caminho: a educação!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="https://www.pr.senac.br" class="btn btn-sm btn-outline-secondary" target="_blank">Site</a>
+                                        <a href="https://www.pr.senac.br/busca" class="btn btn-sm btn-outline-secondary" target="_blank">Cursos</a>
+                                    </div>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./img/sesc-logo-F184943794-seeklogo.com.png" class="img-fluid rounded" />
+                            <div class="card-body bg-body-secondary">
+                                <p class="card-text">Tudo que faz bem tem no Sesc!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="https://www.sescpr.com.br" class="btn btn-sm btn-outline-secondary" target="_blank">Site</a>
+                                        <a href="https://www.sescpr.com.br/parana/cursos/#{%22post_type%22:%22curso%22,%22s%22:%22%22,%22cidade%22:%22%22,%22valor-range%22:%220;16500.00%22,%22unidade%22:%22%22,%22paged%22:%221%22}" class="btn btn-sm btn-outline-secondary" target="_blank">Cursos</a>
+                                    </div>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./img/Sebrae-logo-pequena.png" class="img-fluid rounded" />
+                            <div class="card-body bg-body-secondary">
+                                <p class="card-text">A força do empreendedor brasileiro!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="https://sebrae.com.br" class="btn btn-sm btn-outline-secondary" target="_blank">Site</a>
+                                        <a href="https://sebrae.com.br/sites/PortalSebrae/cursosonline" class="btn btn-sm btn-outline-secondary" target="_blank">Cursos</a>
+                                    </div>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-body-secondary">
+        <div class="container">
+            <h3>Sincap PR - Sindicato dos Salões de Cabeleireiros, Instituto de Beleza e similares do Estado do Paraná</h3>
+            <div class="py-4">
+                <h4>Contato Sincap</h4>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://www.facebook.com/sincappr" class="text-dark" target="_blank"><i class="fa fa-facebook fa-fw"></i>Siga o Sincap no Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/sincap_hair/" class="text-dark" target="_blank"><i class="fa fa-instagram fa-fw"></i>Siga o Sincap no Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/5543991568053" class="text-dark" target="_blank"><i class="fa fa-whatsapp fa-fw"></i>Whatsapp</a>
+                    </li>
+                    <li>
+                        <a href="tel:+554330642229" class="text-dark" target="_blank"><i class="fa fa-phone fa-fw"></i>Telefone</a>
+                    </li>
+                    <li>
+                        <a href="https://g.co/kgs/gLGUWQy" class="text-dark" target="_blank"><i class="fa fa-map fa-fw"></i>Endereço: Rua Santa Catarina, 86 - Sala 104 (Centro Técnico: Sala 201) - Centro - Londrina/PR</a>
+                    </li>
+                    <li>
+                        <a href="mailto:sincap.paranat@gmail.com" class="text-dark" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email: sincap.paranat@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="float-end">
+                <a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Ir para o topo</a>
+            </p>
+        </div>
+    </footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
