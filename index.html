@@ -85,7 +85,16 @@
             display: block !important;
         }
 
+        #myCarousel {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
         #myCarousel .carousel-inner {
+            height: 350px; /* Ajuste conforme necessário */
+        }
+        
+        #myCarousel2 .carousel-inner {
             height: 350px; /* Ajuste conforme necessário */
         }
 
@@ -93,9 +102,22 @@
             height: 100%;
         }
 
+        #myCarousel2 .carousel-item {
+            height: 100%;
+        }
+
         #myCarousel .carousel-item svg {
             height: 100%;
             width: 100%;
+        }
+
+        #myCarousel2 .carousel-item svg {
+            height: 100%;
+            width: 100%;
+        }
+
+        .carousel-caption p {
+            font-size: small;
         }
         .text-bg-dark, .bg-dark, .btn-primary, .btn-outline-secondary {
             color: #fff !important;
@@ -158,13 +180,16 @@
             </div>
         </div>
     </header>
+
     <main>
         <!-- Carrossel Senac -->
         <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
             <div class="carousel-inner">
                 <!-- Banner 1 -->
@@ -182,6 +207,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Banner 2 -->
                 <div class="carousel-item" style="background-image: url('./img/cursos/zeladoria/aperfeicoamento_para_porteiro_de_edificio_308688410.jpg'), linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)); background-position: center; background-repeat: no-repeat;">
                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
@@ -190,37 +216,71 @@
                     </svg>
                     <div class="container">
                         <div class="carousel-caption text-center">
-                            <h1>Asseio, Conservação e Zeladoria</h1>
-                            <p><b>APERFEIÇOAMENTO PARA PORTEIRO DE EDIFÍCIO</b><br/> <i>Objetivo:</i><br/> Aprimore-se nas atividades de porteiro de edifício. Saiba como atender condôminos, visitantes e prestadores de serviço com qualidade e segurança.</p>
+                            <h1>Cursos na Área de Asseio, Conservação e Zeladoria</h1>
+                            <p><b>APERFEIÇOAMENTO PARA PORTEIRO DE EDIFÍCIO</b></p>
                             <p><a class="btn btn-lg btn-primary" href="https://www.pr.senac.br/busca" target="_blank">Acesse Senac PR</a></p>
                         </div>
                     </div>
                 </div>
+
                 <!-- Banner 3 -->
-                <div class="carousel-item" style="background-image: url('./img/cursos/'), linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)); background-position: center; background-repeat: no-repeat;">
+                <div class="carousel-item" style="background-image: url('./img/cursos/beleza/montagem_beleza.png'), linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)); background-position: center; background-repeat: no-repeat;">
                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                         <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
                     </svg>
                     <div class="container">
                         <div class="carousel-caption text-center">
-                            <h1>Asseio, Conservação e Zeladoria</h1>
-                            <p><b>APERFEIÇOAMENTO PARA PORTEIRO DE EDIFÍCIO</b><br/> <i>Objetivo:</i><br/> Aprimore-se nas atividades de porteiro de edifício. Saiba como atender condôminos, visitantes e prestadores de serviço com qualidade e segurança.</p>
+                            <h1>Cursos na Área de Beleza</h1>
+                            <p>
+                                CABELEIREIRO - UNHAS DE GEL
+                                ALONGAMENTO DE UNHAS EM ACRÍLICO
+                                ESMALTAÇÃO EM GEL - AUTOMAQUIAGEM
+                                BÁSICO DE MAQUIAGEM - BÁSICO EM DEPILAÇÃO
+                                AUTOMAQUIAGEM PARA PELE MADURA - VALORIZAÇÃO DA BELEZA
+                                BROWLAMINATION E LASH LIFTING
+                                BARBEIRO - DESIGN DE SOBRANCELHAS
+                                INTRADERMOTERAPIA CAPILAR - SPA E PLÁSTICA DOS PÉS
+                            </p>
                             <p><a class="btn btn-lg btn-primary" href="https://www.pr.senac.br/busca" target="_blank">Acesse Senac PR</a></p>
                         </div>
                     </div>
                 </div>
-                <!-- Banner ??? -->
-                <div class="carousel-item" style="background-image: url('./img/sesc-logo-F184943794-seeklogo.com.png'), linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)); background-position: center; background-repeat: no-repeat;">
+
+                <!-- Banner 4 -->
+                <div class="carousel-item" style="background-image: url('./img/cursos/comercio/montagem_comercio.png'), linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)); background-position: center; background-repeat: no-repeat;">
                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                         <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
                     </svg>
                     <div class="container">
-                        <div class="carousel-caption text-end">
-                            <h1>Cursos Sesc PR</h1>
-                            <p><b>Aumente seu conhecimento e cresça profissionalmente!</b><br/> <i>Conectando forças, alcançamos mais!</i><br/> A colaboração estratégica entre empresas gera soluções mais eficientes e fortalece a competitividade no mercado.</p>
-                            <p><a class="btn btn-lg btn-primary" href="https://www.sescpr.com.br/parana/cursos/#{%22post_type%22:%22curso%22,%22s%22:%22%22,%22cidade%22:%22%22,%22valor-range%22:%220;16500.00%22,%22unidade%22:%22%22,%22paged%22:%221%22}" target="_blank">Acesse Sesc PR</a></p>
+                        <div class="carousel-caption text-center">
+                            <h1>Cursos na Área do Comércio</h1>
+                            <p>
+                                MARKETING E VENDAS
+                                MARKETING DIGITAL
+                                TÉCNICAS DE VENDAS
+                                APLICAÇÃO DE INTELIGÊNCIA ARTIFICIAL PARA NEGÓCIOS
+                                FERRAMENTAS DE MARKETING DIGITAL
+                            </p>
+                            <p><a class="btn btn-lg btn-primary" href="https://www.pr.senac.br/busca" target="_blank">Acesse Senac PR</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banner 5 -->
+                <div class="carousel-item" style="background-image: url('./img/cursos/comunicacao/oratoria_300931966.jpg'), linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)); background-position: center; background-repeat: no-repeat;">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption text-center">
+                            <h1>Cursos na Área da Comunicação</h1>
+                            <p>
+                                ORATÓRIA
+                            </p>
+                            <p><a class="btn btn-lg btn-primary" href="https://www.pr.senac.br/busca" target="_blank">Acesse Senac PR</a></p>
                         </div>
                     </div>
                 </div>
@@ -234,12 +294,12 @@
                 <span class="visually-hidden">Próximo</span>
             </button>
         </div>
+
         <!-- Carrossel Sesc -->
-        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div id="myCarousel2" class="carousel slide mb-6" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
             <div class="carousel-inner">
                 <!-- Banner 1 -->
@@ -257,6 +317,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Banner 2 -->
                 <div class="carousel-item" style="background-image: url('./img/sesc-logo-F184943794-seeklogo.com.png'), linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)); background-position: center; background-repeat: no-repeat;">
                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
@@ -272,17 +333,18 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Anterior</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Próximo</span>
             </button>
         </div>
+
         <!-- Boas vindas -->
-        <section class="py-2 text-center container">
+        <section class="py2 mt-4 text-center container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="fw-light">Bem vindo(a) à página de Parceiros Sincap</h1>
@@ -295,6 +357,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Containers -->
         <div class="album py-2 bg-body-tertiary" id="containeres">
             <div class="container">
@@ -333,6 +396,7 @@
             </div>
         </div>
     </main>
+
     <!-- Rodapé -->
     <footer class="text-body-secondary mt-5">
         <div class="container">
